@@ -1,0 +1,18 @@
+{
+  "title": "go table-driven tests",
+  "description": "write idiomatic table-driven tests with subtests and edge cases.",
+  "language": "go",
+  "tech": "testing",
+  "category": "languages",
+  "subcategory": "go",
+  "tags": ["go", "testing", "table-driven"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true }
+  ],
+  "context": "prefer small, descriptive test cases; use t.Run for subtests; avoid global state.",
+  "instructions": "1) extract function behavior and edge cases. 2) build a test table (name, input, want, wantErr). 3) generate tests with t.Run subtests. 4) include benchmarks if hot paths are suspected. return code only.",
+  "model_tips": "use cmp/cmp or reflect.DeepEqual as appropriate.",
+  "risks": "flaky tests from shared mutable state.",
+  "references": ["https://go.dev/doc/code#Testing"],
+  "output_format": { "type": "code" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "django query optimization",
+  "description": "identify n+1s, unnecessary loads, and add indexes/select_related/prefetch_related.",
+  "language": "python",
+  "tech": "django",
+  "category": "frameworks",
+  "subcategory": "backend/python/django",
+  "tags": ["django", "orm", "performance"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true },
+    { "name": "db_schema", "type": "markdown", "required": false }
+  ],
+  "context": "optimize queries while preserving correctness; avoid premature denormalization.",
+  "instructions": "1) detect n+1 patterns and propose select_related/prefetch_related. 2) show queryset rewrites (values, annotate, exists). 3) propose indexes and explain tradeoffs. 4) include measurements to verify improvement.",
+  "model_tips": "favor database-side filtering and projection.",
+  "risks": "over-indexing; cache incoherence.",
+  "references": ["https://docs.djangoproject.com/en/stable/topics/db/optimization/"],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "python asyncio patterns",
+  "description": "adopt safe, robust async patterns for concurrency and io-bound tasks.",
+  "language": "python",
+  "tech": "asyncio",
+  "category": "languages",
+  "subcategory": "python",
+  "tags": ["python", "asyncio", "concurrency"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": false }
+  ],
+  "context": "use structured concurrency; cancel tasks on errors; bound concurrency.",
+  "instructions": "1) identify blocking calls and suggest async equivalents. 2) show gather with return_exceptions tradeoffs. 3) propose semaphore/queue patterns for backpressure. 4) add graceful shutdown and cancellation handling. 5) include logging/tracing guidelines.",
+  "model_tips": "wrap third-party blocking libs with run_in_executor.",
+  "risks": "hidden blocking code; orphaned tasks.",
+  "references": ["https://docs.python.org/3/library/asyncio-task.html"],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "isolate and reproduce a bug",
+  "description": "find a minimal, deterministic reproduction and identify likely root causes.",
+  "language": "any",
+  "tech": "generic",
+  "category": "debugging",
+  "subcategory": null,
+  "tags": ["debugging", "repro", "triage"],
+  "inputs": [
+    { "name": "symptoms", "type": "markdown", "required": true },
+    { "name": "logs_or_traces", "type": "markdown", "required": false },
+    { "name": "code_selection", "type": "code", "required": false }
+  ],
+  "context": "be systematic and minimize moving parts; prefer binary search techniques.",
+  "instructions": "1) restate the symptom as an observable failure. 2) propose a minimal repro plan. 3) list 3-5 hypotheses with confidence and tests to falsify. 4) suggest targeted logging and instrumentation. 5) outline the most likely fix with a small diff.",
+  "model_tips": "keep steps short and actionable.",
+  "risks": "flaky repros; hidden global state.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

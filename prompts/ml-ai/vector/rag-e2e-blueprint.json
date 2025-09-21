@@ -1,0 +1,19 @@
+{
+  "title": "rag end-to-end blueprint",
+  "description": "design a reliable retrieval-augmented generation pipeline end to end.",
+  "language": null,
+  "tech": "rag",
+  "category": "ml-ai",
+  "subcategory": "vector",
+  "tags": ["rag", "retrieval", "architecture"],
+  "inputs": [
+    { "name": "corpus", "type": "markdown", "required": true },
+    { "name": "latency_budget_ms", "type": "number", "required": false }
+  ],
+  "context": "opt for deterministic indexing, robust chunking, and evals before launch.",
+  "instructions": "1) select embedding model and distance metric with justification. 2) specify chunking and metadata strategy. 3) outline ingestion, indexing, and updates. 4) design query pipeline (retriever, reranker, synthesizer). 5) define evaluation and guardrails.",
+  "model_tips": "prefer offline eval sets and telemetry for drift detection.",
+  "risks": "hallucinations, stale embeddings, latency spikes.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "llm function calling design",
+  "description": "design safe, minimal functions and arguments for reliable tool use.",
+  "language": null,
+  "tech": "llm",
+  "category": "ml-ai",
+  "subcategory": "llm",
+  "tags": ["llm", "functions", "tool-use"],
+  "inputs": [
+    { "name": "capabilities", "type": "markdown", "required": true },
+    { "name": "constraints", "type": "markdown", "required": false }
+  ],
+  "context": "minimize function count and argument surface; prefer enums and schemas.",
+  "instructions": "1) enumerate user intents and map to minimal functions. 2) define schemas with types, enums, and required fields. 3) outline guardrails and validation. 4) provide example conversations and calls.",
+  "model_tips": "avoid free-form strings when enums or unions suffice.",
+  "risks": "prompt injection, ambiguous arguments.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

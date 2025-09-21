@@ -1,0 +1,19 @@
+{
+  "title": "postgres indexing strategies",
+  "description": "design effective indexes to speed up queries without over-indexing.",
+  "language": "sql",
+  "tech": "postgres",
+  "category": "databases",
+  "subcategory": "relational/postgres",
+  "tags": ["postgres", "index", "performance"],
+  "inputs": [
+    { "name": "queries", "type": "markdown", "required": true },
+    { "name": "schema", "type": "markdown", "required": true }
+  ],
+  "context": "use explain analyze; prefer covering indexes for hot queries.",
+  "instructions": "1) analyze provided queries and predicates. 2) propose indexes (btree/hash/gin/gist) with rationale. 3) show create index statements and maintenance notes. 4) suggest verifying via explain analyze before/after.",
+  "model_tips": "avoid redundant and overlapping indexes.",
+  "risks": "write amplification, bloat, slow updates.",
+  "references": ["https://www.postgresql.org/docs/current/indexes-intro.html"],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "generate unit tests for selected code",
+  "description": "create high-quality unit tests with edge cases and clear naming.",
+  "language": "any",
+  "tech": "generic",
+  "category": "testing",
+  "subcategory": "unit",
+  "tags": ["testing", "unit", "language-agnostic"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true, "description": "the code to test" },
+    { "name": "test_framework", "type": "enum", "required": false, "enum": ["jest", "vitest", "pytest", "unittest", "junit5"], "default": "jest" }
+  ],
+  "context": "you are a precise test architect. prefer behavior-focused tests over implementation details.",
+  "instructions": "1) summarize the target behavior in a short table. 2) list edge cases and invalid inputs. 3) propose test cases (name, inputs, expected). 4) generate tests for {{test_framework}} using only the public api. return code only.",
+  "model_tips": "be concise; avoid redundant comments; table-first plan then code.",
+  "risks": "brittle tests if internal details are asserted too tightly.",
+  "references": ["https://martinfowler.com/bliki/UnitTest.html"],
+  "output_format": { "type": "code" }
+}

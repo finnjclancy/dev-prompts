@@ -1,0 +1,19 @@
+{
+  "title": "design effective pytest fixtures",
+  "description": "create clear, reusable fixtures with proper scopes and minimal coupling.",
+  "language": "python",
+  "tech": "pytest",
+  "category": "languages",
+  "subcategory": "python",
+  "tags": ["python", "pytest", "testing"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": false },
+    { "name": "resources", "type": "markdown", "required": false, "description": "db, filesystem, network dependencies" }
+  ],
+  "context": "prefer function-scoped fixtures by default; keep fixtures focused and explicit.",
+  "instructions": "1) list candidate fixtures and scopes (function/class/module/session). 2) show example fixture definitions with teardown. 3) propose parametrization and factory fixtures. 4) demonstrate usage in tests with marks. 5) point out overuse smells and alternatives.",
+  "model_tips": "avoid hidden magic; pass dependencies through function args.",
+  "risks": "session fixtures leaking state; slow shared resources.",
+  "references": ["https://docs.pytest.org/en/stable/fixture.html"],
+  "output_format": { "type": "markdown" }
+}

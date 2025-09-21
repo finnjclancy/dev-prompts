@@ -1,0 +1,19 @@
+{
+  "title": "dockerfiles: best practices",
+  "description": "write secure, small, cache-friendly dockerfiles with multi-stage builds.",
+  "language": null,
+  "tech": "docker",
+  "category": "devops",
+  "subcategory": "containers",
+  "tags": ["docker", "containers", "security"],
+  "inputs": [
+    { "name": "base_image", "type": "string", "required": false },
+    { "name": "build_tool", "type": "enum", "required": false, "enum": ["node", "python", "go", "java"], "default": "node" }
+  ],
+  "context": "prefer distroless/slim images, non-root users, and reproducible builds.",
+  "instructions": "1) outline a multi-stage build with minimal attack surface. 2) add caching layers thoughtfully. 3) set non-root user and file permissions. 4) provide a final example dockerfile and a short explanation.",
+  "model_tips": "pin versions and digest where possible.",
+  "risks": "cache busting, large layers, leaking secrets.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "generate integration tests for selected feature",
+  "description": "write realistic integration tests that cover happy paths and failure modes.",
+  "language": "any",
+  "tech": "generic",
+  "category": "testing",
+  "subcategory": "integration",
+  "tags": ["testing", "integration", "language-agnostic"],
+  "inputs": [
+    { "name": "feature_description", "type": "markdown", "required": true, "description": "what the feature does and its boundaries" },
+    { "name": "env_setup", "type": "markdown", "required": false, "description": "how to boot dependencies like db, queues, services" }
+  ],
+  "context": "assume a black-box perspective; assert externally observable behavior and side effects.",
+  "instructions": "1) identify external dependencies and contracts. 2) propose test scenarios (given-when-then). 3) include setup/teardown for dependencies. 4) generate tests in the project’s primary integration test framework. return code only.",
+  "model_tips": "favor fewer, high-value tests that cover major paths and failure states.",
+  "risks": "over-mocking can hide real integration issues.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

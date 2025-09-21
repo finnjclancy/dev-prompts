@@ -1,0 +1,19 @@
+{
+  "title": "performance-focused code review",
+  "description": "find hot paths, excessive allocations, and algorithmic issues; propose fixes.",
+  "language": "any",
+  "tech": "generic",
+  "category": "code-review",
+  "subcategory": "performance",
+  "tags": ["review", "performance", "profiling"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true },
+    { "name": "workload_characteristics", "type": "markdown", "required": false, "description": "throughput, latency, peak sizes" }
+  ],
+  "context": "be pragmatic; prefer complexity-reducing changes with measurable impact.",
+  "instructions": "1) identify critical sections and hot loops. 2) estimate time/space complexity and data sizes. 3) propose concrete optimizations with tradeoffs. 4) suggest quick wins and deeper refactors. return a concise diff or code blocks.",
+  "model_tips": "separate micro-opts from architectural changes.",
+  "risks": "premature optimization without profiling data.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

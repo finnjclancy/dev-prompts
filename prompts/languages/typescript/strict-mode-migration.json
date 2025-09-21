@@ -1,0 +1,19 @@
+{
+  "title": "migrate to typescript strict mode",
+  "description": "stepwise plan to enable strict flags and fix issues safely.",
+  "language": "typescript",
+  "tech": "tsc",
+  "category": "languages",
+  "subcategory": "typescript",
+  "tags": ["typescript", "strict", "types"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": false },
+    { "name": "tsconfig", "type": "json", "required": false }
+  ],
+  "context": "opt for minimal risk changes; avoid `any` unless wrapped with TODO to remove.",
+  "instructions": "1) propose staged tsconfig changes (incremental strict flags). 2) list repo-wide search-and-fix patterns. 3) show examples for null safety, unknown vs any, noImplicitThis, strictBindCallApply. 4) provide quick codemods and safe adapter types. 5) output a checklist to track progress.",
+  "model_tips": "prefer type guards over non-null assertions.",
+  "risks": "excessive `any` can hide problems; breaking api types.",
+  "references": ["https://www.typescriptlang.org/tsconfig#strict"],
+  "output_format": { "type": "markdown" }
+}

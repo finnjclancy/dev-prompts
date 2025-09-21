@@ -1,0 +1,19 @@
+{
+  "title": "security-focused code review",
+  "description": "scan for common vulns, insecure defaults, and missing validations.",
+  "language": "any",
+  "tech": "generic",
+  "category": "code-review",
+  "subcategory": "security",
+  "tags": ["review", "security", "owasp"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true },
+    { "name": "threat_model_notes", "type": "markdown", "required": false }
+  ],
+  "context": "assume a cautious appsec engineer reviewing untrusted inputs and sensitive flows.",
+  "instructions": "1) enumerate entry points and trust boundaries. 2) map inputs to validation/sanitization. 3) check authn/authz, session, csrf/cors, injection, secrets, logging. 4) output findings with severity and fixes. return markdown.",
+  "model_tips": "tie each finding to a specific line/context with a fix.",
+  "risks": "false positives without app context.",
+  "references": ["https://owasp.org/www-project-top-ten/"],
+  "output_format": { "type": "markdown" }
+}

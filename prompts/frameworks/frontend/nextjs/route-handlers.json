@@ -1,0 +1,20 @@
+{
+  "title": "next.js route handlers",
+  "description": "add a typed route handler with validation, errors, and caching.",
+  "language": "typescript",
+  "tech": "nextjs",
+  "category": "frameworks",
+  "subcategory": "frontend/nextjs",
+  "tags": ["nextjs", "route", "api"],
+  "inputs": [
+    { "name": "route", "type": "string", "required": true },
+    { "name": "method", "type": "enum", "required": true, "enum": ["GET", "POST", "PUT", "PATCH", "DELETE"], "default": "GET" },
+    { "name": "schema", "type": "json", "required": false }
+  ],
+  "context": "prefer zod validation, typed responses, and explicit error handling.",
+  "instructions": "1) define input schema and parse request. 2) implement handler with proper status codes and errors. 3) add caching/revalidate hints where appropriate. 4) include minimal tests. return code only.",
+  "model_tips": "avoid dynamic any; keep request/response types strict.",
+  "risks": "unvalidated inputs; leaking stack traces.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

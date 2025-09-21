@@ -1,0 +1,20 @@
+{
+  "title": "generate a react component",
+  "description": "create an accessible, testable react component with clear props and state.",
+  "language": "typescript",
+  "tech": "react",
+  "category": "frameworks",
+  "subcategory": "frontend/react",
+  "tags": ["react", "component", "a11y", "testing"],
+  "inputs": [
+    { "name": "component_name", "type": "string", "required": true },
+    { "name": "props_description", "type": "markdown", "required": true },
+    { "name": "styling", "type": "enum", "required": false, "enum": ["css-modules", "styled-components", "tailwind"], "default": "css-modules" }
+  ],
+  "context": "prefer functional components, hooks, and accessible markup.",
+  "instructions": "1) define props interface with JSDoc. 2) implement component with a11y attributes and keyboard support. 3) add basic tests (react testing library). 4) include a small usage example. return code blocks only.",
+  "model_tips": "avoid heavy deps; keep props minimal.",
+  "risks": "over-rendering if state is mis-scoped.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

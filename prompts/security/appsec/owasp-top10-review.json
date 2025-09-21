@@ -1,0 +1,19 @@
+{
+  "title": "owasp top 10 review",
+  "description": "check code against the owasp top 10 and propose remediations.",
+  "language": "any",
+  "tech": "generic",
+  "category": "security",
+  "subcategory": "appsec",
+  "tags": ["security", "owasp", "review"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true },
+    { "name": "app_context", "type": "markdown", "required": false }
+  ],
+  "context": "focus on input handling, authn/authz, secrets, logging, and error handling.",
+  "instructions": "1) map findings to owasp categories. 2) show concrete code changes or configuration fixes. 3) prioritize by severity and likelihood. 4) provide verification steps.",
+  "model_tips": "avoid generic advice—reference specific lines or functions.",
+  "risks": "overgeneralization without full context.",
+  "references": ["https://owasp.org/www-project-top-ten/"],
+  "output_format": { "type": "markdown" }
+}

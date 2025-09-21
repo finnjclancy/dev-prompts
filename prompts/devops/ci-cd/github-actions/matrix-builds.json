@@ -1,0 +1,18 @@
+{
+  "title": "github actions: matrix builds",
+  "description": "create a reusable matrix workflow across os, runtime, and versions.",
+  "language": null,
+  "tech": "github-actions",
+  "category": "devops",
+  "subcategory": "ci-cd/github-actions",
+  "tags": ["ci", "github-actions", "matrix"],
+  "inputs": [
+    { "name": "runtimes", "type": "json", "required": true, "description": "e.g., { node: [18,20], os: [ubuntu-latest, macos-latest] }" }
+  ],
+  "context": "prefer caching, minimal checkout depth, and reusable workflows.",
+  "instructions": "1) design a matrix covering the requested dimensions. 2) add setup with cache (actions/cache) for deps. 3) include separate steps for lint, build, test. 4) output a full workflow yaml. return code only.",
+  "model_tips": "use concurrency and cancel-in-progress for prs.",
+  "risks": "excessive concurrency costs; missing cache keys.",
+  "references": ["https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs"],
+  "output_format": { "type": "code" }
+}
