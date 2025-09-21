@@ -1,0 +1,19 @@
+{
+  "name": "dev-prompts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "community library of developer prompts with schema validation",
+  "scripts": {
+    "validate": "node scripts/validate-prompts.js"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "fast-glob": "^3.3.2",
+    "chalk": "^5.3.0",
+    "colorette": "^2.0.20"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
