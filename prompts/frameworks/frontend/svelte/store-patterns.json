@@ -1,0 +1,18 @@
+{
+  "title": "svelte store patterns",
+  "description": "choose and implement writable/derived stores with good ergonomics.",
+  "language": "typescript",
+  "tech": "svelte",
+  "category": "frameworks",
+  "subcategory": "frontend/svelte",
+  "tags": ["svelte", "stores", "state"],
+  "inputs": [
+    { "name": "state_description", "type": "markdown", "required": true }
+  ],
+  "context": "derive when possible; keep stores focused; avoid nested writable state.",
+  "instructions": "1) propose store structure. 2) implement writable/derived with subscriptions. 3) add usage examples. 4) note performance considerations.",
+  "model_tips": "prefer derived over manual calculations.",
+  "risks": "memory leaks via subscriptions.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

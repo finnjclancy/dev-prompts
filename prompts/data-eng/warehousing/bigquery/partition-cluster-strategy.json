@@ -1,0 +1,18 @@
+{
+  "title": "bigquery partition & cluster strategy",
+  "description": "choose partitioning and clustering to optimize cost and performance.",
+  "language": "sql",
+  "tech": "bigquery",
+  "category": "data-eng",
+  "subcategory": "warehousing/bigquery",
+  "tags": ["bigquery", "partition", "cluster"],
+  "inputs": [
+    { "name": "table_profile", "type": "markdown", "required": true }
+  ],
+  "context": "align strategy to query patterns and filters.",
+  "instructions": "1) analyze query predicates and sorting. 2) propose partition and cluster columns. 3) provide ddl to create/alter tables. 4) estimate impact.",
+  "model_tips": "avoid over-clustering low-cardinality cols.",
+  "risks": "hot partitions; uneven clustering.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

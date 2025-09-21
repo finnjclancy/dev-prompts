@@ -1,0 +1,18 @@
+{
+  "title": "postgres schema design",
+  "description": "design a normalized, performant schema with indexes and constraints.",
+  "language": "sql",
+  "tech": "postgres",
+  "category": "databases",
+  "subcategory": "relational/postgres",
+  "tags": ["postgres", "schema", "design"],
+  "inputs": [
+    { "name": "entities", "type": "markdown", "required": true }
+  ],
+  "context": "prefer normalized design with clear ownership and constraints.",
+  "instructions": "1) define tables and relationships. 2) choose keys and constraints. 3) add indexes and partitioning if needed. 4) output ddl and rationale.",
+  "model_tips": "avoid premature denormalization.",
+  "risks": "over-indexing; future migrations.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

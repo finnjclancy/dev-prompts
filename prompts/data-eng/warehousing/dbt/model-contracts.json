@@ -1,0 +1,18 @@
+{
+  "title": "dbt model contracts",
+  "description": "add contracts, tests, and exposures to critical dbt models.",
+  "language": null,
+  "tech": "dbt",
+  "category": "data-eng",
+  "subcategory": "warehousing/dbt",
+  "tags": ["dbt", "contracts", "tests"],
+  "inputs": [
+    { "name": "model_yaml", "type": "markdown", "required": false }
+  ],
+  "context": "treat models as apis; version and test.",
+  "instructions": "1) define model contracts (columns/types). 2) add tests and freshness. 3) set exposures and owners. 4) show updated yaml and examples.",
+  "model_tips": "enforce strict types and not nulls.",
+  "risks": "breaking downstream deps.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

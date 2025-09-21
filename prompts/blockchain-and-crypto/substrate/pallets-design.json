@@ -1,0 +1,18 @@
+{
+  "title": "substrate pallets design",
+  "description": "design storage, events, and dispatchables with weights and benchmarking.",
+  "language": "rust",
+  "tech": "substrate",
+  "category": "blockchain-and-crypto",
+  "subcategory": "substrate",
+  "tags": ["substrate", "pallet", "rust"],
+  "inputs": [
+    { "name": "pallet_code", "type": "code", "required": false }
+  ],
+  "context": "prefer explicit weights and origin checks.",
+  "instructions": "1) define storage and events. 2) implement dispatchables with checks. 3) add benchmarking and weights. 4) include tests and migration notes.",
+  "model_tips": "use frame macros consistently.",
+  "risks": "underestimated weights; storage migration bugs.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

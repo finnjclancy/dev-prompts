@@ -1,0 +1,18 @@
+{
+  "title": "mongodb aggregation framework design",
+  "description": "build efficient aggregation pipelines with indexes and projections.",
+  "language": null,
+  "tech": "mongodb",
+  "category": "databases",
+  "subcategory": "nosql/mongodb",
+  "tags": ["mongodb", "aggregation", "pipeline"],
+  "inputs": [
+    { "name": "pipeline_goal", "type": "markdown", "required": true }
+  ],
+  "context": "match early; project narrowly; use indexes.",
+  "instructions": "1) design pipeline stages with rationale. 2) propose supporting indexes. 3) show example queries and results. 4) discuss performance tradeoffs.",
+  "model_tips": "avoid $unwind explosion; consider $facet.",
+  "risks": "memory limits; large documents.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

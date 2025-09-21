@@ -1,0 +1,18 @@
+{
+  "title": "aws api gateway design",
+  "description": "design a secure, versioned api gateway with caching and auth.",
+  "language": null,
+  "tech": "aws",
+  "category": "cloud",
+  "subcategory": "aws",
+  "tags": ["api-gateway", "aws", "design"],
+  "inputs": [
+    { "name": "endpoints", "type": "markdown", "required": true }
+  ],
+  "context": "prefer jwt authorizers, rate limits, and stage variables.",
+  "instructions": "1) define resources and methods. 2) choose auth (cognito/jwt/lambda). 3) set caching, throttling, and logging. 4) output an infra template snippet.",
+  "model_tips": "separate public vs private apis.",
+  "risks": "over-permissive routes; cache invalidation.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

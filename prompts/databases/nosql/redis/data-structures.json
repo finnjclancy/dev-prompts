@@ -1,0 +1,18 @@
+{
+  "title": "redis data structures patterns",
+  "description": "choose appropriate redis structures and patterns for the task.",
+  "language": null,
+  "tech": "redis",
+  "category": "databases",
+  "subcategory": "nosql/redis",
+  "tags": ["redis", "patterns", "caching"],
+  "inputs": [
+    { "name": "use_case", "type": "markdown", "required": true }
+  ],
+  "context": "prefer simple, atomic operations; note persistence and eviction.",
+  "instructions": "1) select data structures (strings, hashes, sets, zsets, streams). 2) outline key naming and ttl policy. 3) show commands and lua if needed. 4) note eviction and consistency.",
+  "model_tips": "avoid big keys and deep hierarchies.",
+  "risks": "evictions; memory fragmentation.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

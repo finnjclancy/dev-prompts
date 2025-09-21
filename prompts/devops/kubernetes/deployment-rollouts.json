@@ -1,0 +1,18 @@
+{
+  "title": "kubernetes deployment rollouts",
+  "description": "configure rolling updates, canary, and blue/green with readiness and hpas.",
+  "language": null,
+  "tech": "kubernetes",
+  "category": "devops",
+  "subcategory": "kubernetes",
+  "tags": ["kubernetes", "rollout", "deployment"],
+  "inputs": [
+    { "name": "service", "type": "markdown", "required": true }
+  ],
+  "context": "prefer rolling updates with health probes and gradual traffic shifts.",
+  "instructions": "1) set readiness/liveness probes. 2) define update strategy and max surge/unavailable. 3) add hpa. 4) output yaml for deployment and service.",
+  "model_tips": "include resource requests/limits.",
+  "risks": "readiness misconfig; pod churn.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

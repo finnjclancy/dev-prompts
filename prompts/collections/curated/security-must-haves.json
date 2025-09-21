@@ -1,0 +1,18 @@
+{
+  "title": "security must-haves",
+  "description": "essential security prompts to use during development and review.",
+  "language": null,
+  "tech": null,
+  "category": "collections",
+  "subcategory": "curated",
+  "tags": ["collection", "security"],
+  "inputs": [],
+  "context": "use these regularly to keep security top-of-mind.",
+  "instructions": "open each referenced json and paste its instructions into your ide chat.",
+  "references": [
+    "general/security/secret-scan-remediation.json",
+    "general/security/threat-modeling-session.json",
+    "security/appsec/owasp-top10-review.json"
+  ],
+  "output_format": { "type": "markdown" }
+}

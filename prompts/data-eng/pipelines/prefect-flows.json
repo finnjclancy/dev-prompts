@@ -1,0 +1,18 @@
+{
+  "title": "prefect flow design",
+  "description": "design reliable prefect flows with retries, caching, and blocks.",
+  "language": "python",
+  "tech": "prefect",
+  "category": "data-eng",
+  "subcategory": "pipelines",
+  "tags": ["prefect", "flows", "pipelines"],
+  "inputs": [
+    { "name": "flow_description", "type": "markdown", "required": true }
+  ],
+  "context": "use blocks for secrets; prefer small, composable tasks.",
+  "instructions": "1) define flow and tasks with retries and timeouts. 2) set caching and concurrency controls. 3) include deployment yaml. 4) output code and config.",
+  "model_tips": "leverage task tagging and concurrency limits.",
+  "risks": "cache stampedes; unbounded retries.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "solidity secure patterns",
+  "description": "apply secure, gas-aware patterns (checks-effects-interactions, reentrancy guards).",
+  "language": "solidity",
+  "tech": "ethereum",
+  "category": "blockchain-and-crypto",
+  "subcategory": "ethereum",
+  "tags": ["solidity", "security", "gas"],
+  "inputs": [
+    { "name": "contract_code", "type": "code", "required": true }
+  ],
+  "context": "assume adversarial actors; minimize external calls and state writes.",
+  "instructions": "1) identify reentrancy, access control, and integer risks. 2) apply CEI pattern, guards, and pull over push. 3) suggest events and pausable patterns. 4) propose gas optimizations (packing, immutables). return code diffs.",
+  "model_tips": "prefer OpenZeppelin primitives.",
+  "risks": "breaking storage layout; unchecked upgradeable proxies.
+",
+  "references": ["https://docs.openzeppelin.com/contracts"],
+  "output_format": { "type": "code" }
+}

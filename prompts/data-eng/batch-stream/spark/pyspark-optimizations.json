@@ -1,0 +1,18 @@
+{
+  "title": "pyspark optimizations",
+  "description": "optimize spark jobs using partitioning, joins, and caching wisely.",
+  "language": "python",
+  "tech": "spark",
+  "category": "data-eng",
+  "subcategory": "batch-stream/spark",
+  "tags": ["spark", "pyspark", "performance"],
+  "inputs": [
+    { "name": "job_snippet", "type": "code", "required": true }
+  ],
+  "context": "prefer dataset/dataframe apis; avoid udf when possible.",
+  "instructions": "1) analyze shuffles and joins. 2) propose partitioning/bucketing and broadcast joins. 3) tune persistence and partition sizes. 4) output improved code and tuning.",
+  "model_tips": "use explain to justify changes.",
+  "risks": "skew; excessive caching.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

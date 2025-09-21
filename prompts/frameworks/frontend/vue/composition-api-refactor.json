@@ -1,0 +1,18 @@
+{
+  "title": "vue: refactor to composition api",
+  "description": "migrate options api code to composition api with composables.",
+  "language": "typescript",
+  "tech": "vue",
+  "category": "frameworks",
+  "subcategory": "frontend/vue",
+  "tags": ["vue", "composition-api", "refactor"],
+  "inputs": [
+    { "name": "component_code", "type": "code", "required": true }
+  ],
+  "context": "extract logic into composables; use typed props/emit.",
+  "instructions": "1) identify state/effects/computed. 2) refactor into setup/composables. 3) update templates and types. 4) add unit tests.",
+  "model_tips": "avoid overusing provide/inject.",
+  "risks": "lost reactivity; circular deps in composables.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

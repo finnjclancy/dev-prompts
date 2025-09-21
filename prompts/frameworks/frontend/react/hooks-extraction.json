@@ -1,0 +1,18 @@
+{
+  "title": "react: extract custom hook",
+  "description": "extract reusable stateful logic into a typed custom hook.",
+  "language": "typescript",
+  "tech": "react",
+  "category": "frameworks",
+  "subcategory": "frontend/react",
+  "tags": ["react", "hooks", "refactor"],
+  "inputs": [
+    { "name": "component_code", "type": "code", "required": true }
+  ],
+  "context": "keep hooks pure-ish with clear inputs/outputs and stable deps.",
+  "instructions": "1) identify cohesive logic to extract. 2) design hook signature and return shape. 3) refactor component to use the hook. 4) add tests for the hook. return code only.",
+  "model_tips": "memoize expensive computations.",
+  "risks": "stale closures; unnecessary re-renders.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

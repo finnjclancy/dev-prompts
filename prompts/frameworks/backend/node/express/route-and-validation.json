@@ -1,0 +1,19 @@
+{
+  "title": "express: route + validation",
+  "description": "add a typed express route with validation and error handling.",
+  "language": "typescript",
+  "tech": "express",
+  "category": "frameworks",
+  "subcategory": "backend/node/express",
+  "tags": ["express", "route", "validation"],
+  "inputs": [
+    { "name": "route", "type": "string", "required": true },
+    { "name": "method", "type": "enum", "required": true, "enum": ["GET", "POST", "PUT", "PATCH", "DELETE"], "default": "GET" }
+  ],
+  "context": "prefer zod/yup validation; centralize error middleware.",
+  "instructions": "1) define schema and parse request. 2) implement handler with types. 3) add error middleware usage. 4) include a test.",
+  "model_tips": "avoid any; keep types strict.",
+  "risks": "unvalidated inputs.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

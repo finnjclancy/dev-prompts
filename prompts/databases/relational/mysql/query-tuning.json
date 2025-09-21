@@ -1,0 +1,19 @@
+{
+  "title": "mysql query tuning",
+  "description": "tune slow mysql queries using indexes, rewrites, and analyze explain.",
+  "language": "sql",
+  "tech": "mysql",
+  "category": "databases",
+  "subcategory": "relational/mysql",
+  "tags": ["mysql", "query", "performance"],
+  "inputs": [
+    { "name": "query", "type": "markdown", "required": true },
+    { "name": "schema", "type": "markdown", "required": false }
+  ],
+  "context": "avoid select *; prefer covering indexes and proper join order.",
+  "instructions": "1) analyze explain plan. 2) propose index additions/changes. 3) rewrite query if needed. 4) provide before/after metrics guidance.",
+  "model_tips": "beware of implicit conversions.",
+  "risks": "write slowdowns from new indexes.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

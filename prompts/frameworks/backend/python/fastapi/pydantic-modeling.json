@@ -1,0 +1,18 @@
+{
+  "title": "fastapi: pydantic modeling",
+  "description": "define request/response models with validation and examples.",
+  "language": "python",
+  "tech": "fastapi",
+  "category": "frameworks",
+  "subcategory": "backend/python/fastapi",
+  "tags": ["fastapi", "pydantic", "models"],
+  "inputs": [
+    { "name": "schema_description", "type": "markdown", "required": true }
+  ],
+  "context": "use constrained types and enums; add examples and field descriptions.",
+  "instructions": "1) define pydantic models. 2) add validators and examples. 3) wire into endpoints. 4) include tests.",
+  "model_tips": "prefer explicit types over Any.",
+  "risks": "inconsistent response models.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "spark structured streaming design",
+  "description": "design a robust streaming job with checkpointing and exactly-once semantics where possible.",
+  "language": "scala|python",
+  "tech": "spark",
+  "category": "data-eng",
+  "subcategory": "batch-stream/spark",
+  "tags": ["spark", "streaming", "checkpoint"],
+  "inputs": [
+    { "name": "source_sink", "type": "markdown", "required": true }
+  ],
+  "context": "use watermarking and idempotent sinks.",
+  "instructions": "1) define schema and ingestion. 2) set watermark and aggregations. 3) configure checkpointing and output mode. 4) add recovery and monitoring.",
+  "model_tips": "beware of late data tradeoffs.",
+  "risks": "duplication; state store growth.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

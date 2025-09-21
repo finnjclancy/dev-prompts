@@ -1,0 +1,18 @@
+{
+  "title": "aws iam least privilege plan",
+  "description": "tighten iam policies to least privilege with staged rollouts.",
+  "language": null,
+  "tech": "aws",
+  "category": "cloud",
+  "subcategory": "aws",
+  "tags": ["aws", "iam", "security"],
+  "inputs": [
+    { "name": "current_policies", "type": "markdown", "required": true }
+  ],
+  "context": "prefer aws managed policies as building blocks; monitor with cloudtrail.",
+  "instructions": "1) analyze current policies and usage. 2) derive least-privilege statements. 3) propose staged deployment with monitoring. 4) output policy json.",
+  "model_tips": "avoid wildcard actions/resources where possible.",
+  "risks": "breaking access during rollout.",
+  "references": [],
+  "output_format": { "type": "json" }
+}

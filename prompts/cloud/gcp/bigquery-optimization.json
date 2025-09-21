@@ -1,0 +1,19 @@
+{
+  "title": "bigquery query optimization",
+  "description": "reduce cost and latency through partitioning, clustering, and pruning.",
+  "language": "sql",
+  "tech": "bigquery",
+  "category": "cloud",
+  "subcategory": "gcp",
+  "tags": ["bigquery", "sql", "performance"],
+  "inputs": [
+    { "name": "query", "type": "markdown", "required": true },
+    { "name": "table_info", "type": "markdown", "required": false }
+  ],
+  "context": "prefer partitioned and clustered tables; avoid select *.",
+  "instructions": "1) analyze query for scans and joins. 2) propose partitions/clusters and filters. 3) rewrite query with pruning techniques. 4) estimate cost impact.",
+  "model_tips": "use explain and table metadata.",
+  "risks": "over-clustering; stale partitions.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "gitlab ci: dynamic environments",
+  "description": "spin up per-branch environments with review apps and teardown.",
+  "language": null,
+  "tech": "gitlab-ci",
+  "category": "devops",
+  "subcategory": "ci-cd/gitlab-ci",
+  "tags": ["gitlab", "ci", "environments"],
+  "inputs": [
+    { "name": "service_stack", "type": "markdown", "required": true }
+  ],
+  "context": "prefer ephemeral envs with cost controls and auto-teardown.",
+  "instructions": "1) define jobs and environment names. 2) add review apps with urls. 3) implement teardown on branch deletion. 4) output .gitlab-ci.yml snippet.",
+  "model_tips": "use rules/if for branches and mrs.",
+  "risks": "resource leaks; dns delays.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "hardhat/foundry testing plan",
+  "description": "write robust tests covering edge cases and invariants for contracts.",
+  "language": "solidity",
+  "tech": "hardhat|foundry",
+  "category": "blockchain-and-crypto",
+  "subcategory": "ethereum",
+  "tags": ["testing", "solidity", "hardhat", "foundry"],
+  "inputs": [
+    { "name": "contract_code", "type": "code", "required": true }
+  ],
+  "context": "test against mainnet-like conditions and reorgs.",
+  "instructions": "1) list invariants and edge cases. 2) generate unit and property tests. 3) include fuzzing and fork tests where applicable. 4) show fixtures and assertions. return code only.",
+  "model_tips": "prefer minimal fixtures; isolate side effects.",
+  "risks": "flaky fork tests; missing authorization tests.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

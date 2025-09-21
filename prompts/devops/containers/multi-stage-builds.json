@@ -1,0 +1,18 @@
+{
+  "title": "docker multi-stage builds",
+  "description": "split build and runtime images for small, secure deployments.",
+  "language": null,
+  "tech": "docker",
+  "category": "devops",
+  "subcategory": "containers",
+  "tags": ["docker", "multi-stage", "build"],
+  "inputs": [
+    { "name": "stack", "type": "enum", "required": true, "enum": ["node", "python", "go", "java"], "default": "node" }
+  ],
+  "context": "prefer distroless/slim runtime and reproducible builds.",
+  "instructions": "1) produce a multi-stage dockerfile with cache-friendly layers. 2) set non-root user. 3) copy only required artifacts. 4) output the dockerfile.",
+  "model_tips": "pin versions and digest when possible.",
+  "risks": "cache misses; missing runtime deps.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

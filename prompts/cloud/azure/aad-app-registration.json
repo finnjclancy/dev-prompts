@@ -1,0 +1,18 @@
+{
+  "title": "azure ad app registration",
+  "description": "register an app with appropriate permissions and secrets/certs.",
+  "language": null,
+  "tech": "azure",
+  "category": "cloud",
+  "subcategory": "azure",
+  "tags": ["azure", "aad", "app-registration"],
+  "inputs": [
+    { "name": "app_name", "type": "string", "required": true }
+  ],
+  "context": "prefer least privilege and certificate auth.",
+  "instructions": "1) create app registration and service principal. 2) assign api permissions (consent model). 3) configure redirect uris and secrets/certs. 4) output az cli and portal steps.",
+  "model_tips": "note tenant vs app scopes.",
+  "risks": "over-permissioned apps; secret sprawl.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

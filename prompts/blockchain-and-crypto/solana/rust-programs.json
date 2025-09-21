@@ -1,0 +1,18 @@
+{
+  "title": "solana program patterns",
+  "description": "implement safe account handling and instruction processing in rust.",
+  "language": "rust",
+  "tech": "solana",
+  "category": "blockchain-and-crypto",
+  "subcategory": "solana",
+  "tags": ["solana", "rust", "program"],
+  "inputs": [
+    { "name": "program_code", "type": "code", "required": true }
+  ],
+  "context": "validate accounts/ownership; minimize compute; check rent-exempt.",
+  "instructions": "1) validate account metas and permissions. 2) parse and dispatch instructions cleanly. 3) handle errors with thiserror. 4) add tests with solana-program-test. return code only.",
+  "model_tips": "favor zero-copy and checked math.",
+  "risks": "account spoofing, compute budget limits.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "gcp cloud run deploy",
+  "description": "deploy a container to cloud run with traffic splitting and iam.",
+  "language": null,
+  "tech": "gcp",
+  "category": "cloud",
+  "subcategory": "gcp",
+  "tags": ["gcp", "cloud-run", "deploy"],
+  "inputs": [
+    { "name": "service_name", "type": "string", "required": true },
+    { "name": "image", "type": "string", "required": true }
+  ],
+  "context": "prefer min instances for cold starts and least privilege service accounts.",
+  "instructions": "1) create/update service with desired cpu/memory/concurrency. 2) configure iam and ingress. 3) set traffic splits for canary. 4) output gcloud commands and yaml.",
+  "model_tips": "include region and platform flags.",
+  "risks": "public exposure if ingress is open.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

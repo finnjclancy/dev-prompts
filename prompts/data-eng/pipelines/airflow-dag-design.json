@@ -1,0 +1,18 @@
+{
+  "title": "airflow dag design",
+  "description": "design clear, observable airflow dags with idempotent tasks.",
+  "language": "python",
+  "tech": "airflow",
+  "category": "data-eng",
+  "subcategory": "pipelines",
+  "tags": ["airflow", "dag", "pipelines"],
+  "inputs": [
+    { "name": "pipeline_description", "type": "markdown", "required": true }
+  ],
+  "context": "prefer small tasks, retries, and backfills; use taskflow api when possible.",
+  "instructions": "1) define dag schedule, params, and dependencies. 2) design idempotent tasks with retries. 3) add observability (xcom, logging, alerts). 4) output code for the dag.",
+  "model_tips": "avoid heavy tasks; use sensors sparingly.",
+  "risks": "stuck sensors; dependency cycles.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
