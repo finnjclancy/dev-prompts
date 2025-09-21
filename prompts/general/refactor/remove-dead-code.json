@@ -1,0 +1,19 @@
+{
+  "title": "refactor: remove dead code",
+  "description": "identify and safely remove unused code, flags, and branches.",
+  "language": "any",
+  "tech": "generic",
+  "category": "general",
+  "subcategory": "refactor",
+  "tags": ["refactor", "cleanup", "dead-code"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": false },
+    { "name": "repo_context", "type": "markdown", "required": false }
+  ],
+  "context": "prefer conservative deletions; verify via search and tests.",
+  "instructions": "1) list suspected dead code and why. 2) show evidence (no refs, feature flags). 3) provide diffs to remove safely. 4) add guard tests or metrics. return diffs/code only.",
+  "model_tips": "search across repo for references.",
+  "risks": "soft references (reflection, strings) might exist.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "input validation hardening",
+  "description": "add robust input validation and error handling.",
+  "language": "any",
+  "tech": null,
+  "category": "tasks",
+  "subcategory": "hardening",
+  "tags": ["validation", "security", "inputs"],
+  "inputs": [
+    { "name": "schema_or_contract", "type": "markdown", "required": false },
+    { "name": "code_selection", "type": "code", "required": false }
+  ],
+  "context": "validate early; fail fast; use typed schemas.",
+  "instructions": "1) define or refine the input schema. 2) validate at boundaries. 3) normalize and sanitize inputs. 4) return explicit errors. show code changes.",
+  "model_tips": "centralize validation logic.",
+  "risks": "silent coercion; confusing errors.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

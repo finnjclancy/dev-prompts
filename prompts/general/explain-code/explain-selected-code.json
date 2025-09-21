@@ -1,0 +1,18 @@
+{
+  "title": "explain selected code clearly",
+  "description": "explain what the selected code does, step by step, with caveats.",
+  "language": "any",
+  "tech": "generic",
+  "category": "general",
+  "subcategory": "explain-code",
+  "tags": ["explain", "code", "readability"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true }
+  ],
+  "context": "be concise and accurate; call out edge cases and complexity.",
+  "instructions": "1) summarize purpose in one sentence. 2) walk through logic in plain language. 3) highlight assumptions and edge cases. 4) note time/space complexity if relevant. 5) suggest small improvements for clarity.",
+  "model_tips": "avoid speculative behavior not in the code.",
+  "risks": "missing side effects; misreading mutable state.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

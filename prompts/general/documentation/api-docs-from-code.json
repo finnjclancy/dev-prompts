@@ -1,0 +1,18 @@
+{
+  "title": "generate api docs from code",
+  "description": "extract endpoints/types and produce clean, accurate api docs.",
+  "language": "any",
+  "tech": null,
+  "category": "general",
+  "subcategory": "documentation",
+  "tags": ["docs", "api", "automation"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true }
+  ],
+  "context": "prefer concise, example-driven docs.",
+  "instructions": "1) list endpoints/types with brief descriptions. 2) add request/response examples. 3) include auth and error handling notes. 4) output clean markdown ready for a docs site.",
+  "model_tips": "keep examples runnable.",
+  "risks": "drift between code and docs.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "modularization plan",
+  "description": "split a monolith module into clear, cohesive modules with boundaries.",
+  "language": "any",
+  "tech": null,
+  "category": "general",
+  "subcategory": "architecture",
+  "tags": ["architecture", "modularization"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": false },
+    { "name": "repo_context", "type": "markdown", "required": false }
+  ],
+  "context": "minimize cross-module cycles; define contracts first.",
+  "instructions": "1) identify cohesive groupings and boundaries. 2) define interfaces/contracts. 3) propose a move plan (phases). 4) list risks and a verification strategy.",
+  "model_tips": "prefer strangler-fig style migrations.",
+  "risks": "leaky abstractions; dependency hell.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

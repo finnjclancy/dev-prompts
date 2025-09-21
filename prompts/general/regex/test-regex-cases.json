@@ -1,0 +1,19 @@
+{
+  "title": "test regex cases",
+  "description": "generate comprehensive test cases to validate a regex.",
+  "language": null,
+  "tech": "regex",
+  "category": "general",
+  "subcategory": "regex",
+  "tags": ["regex", "testing"],
+  "inputs": [
+    { "name": "regex", "type": "string", "required": true },
+    { "name": "language", "type": "enum", "required": false, "enum": ["js", "python", "java", "go"], "default": "js" }
+  ],
+  "context": "cover edges and performance; include unicode and empty inputs.",
+  "instructions": "1) list edge cases and tricky inputs. 2) generate unit tests in {{language}}. 3) add property-based tests if supported. return code only.",
+  "model_tips": "prefer readable tests with clear names.",
+  "risks": "engine differences; unicode classes.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

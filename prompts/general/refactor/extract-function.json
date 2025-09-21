@@ -1,0 +1,19 @@
+{
+  "title": "refactor: extract function",
+  "description": "extract a pure, named function from a code region with tests.",
+  "language": "any",
+  "tech": "generic",
+  "category": "general",
+  "subcategory": "refactor",
+  "tags": ["refactor", "extract", "clean-code"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true },
+    { "name": "function_name", "type": "string", "required": false }
+  ],
+  "context": "prefer pure functions; avoid hidden globals; keep signatures small.",
+  "instructions": "1) propose a function signature and name. 2) extract code and remove side effects where possible. 3) add unit tests for the new function. 4) update call sites. return code only.",
+  "model_tips": "fail fast on large implicit dependencies.",
+  "risks": "behavior changes if side effects are removed incorrectly.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

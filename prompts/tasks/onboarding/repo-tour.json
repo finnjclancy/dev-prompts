@@ -1,0 +1,18 @@
+{
+  "title": "repo tour",
+  "description": "summarize structure, key modules, and getting started steps.",
+  "language": null,
+  "tech": null,
+  "category": "tasks",
+  "subcategory": "onboarding",
+  "tags": ["onboarding", "docs", "tour"],
+  "inputs": [
+    { "name": "repo_context", "type": "markdown", "required": true }
+  ],
+  "context": "opt for clear orientation and next steps.",
+  "instructions": "1) outline high-level architecture. 2) list key packages and responsibilities. 3) show setup steps. 4) suggest first issues to tackle.",
+  "model_tips": "keep it short and link-y.",
+  "risks": "missing critical config.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

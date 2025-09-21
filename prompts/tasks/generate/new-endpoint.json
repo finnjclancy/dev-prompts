@@ -1,0 +1,20 @@
+{
+  "title": "generate a new backend endpoint",
+  "description": "scaffold a validated endpoint with routing, schema, and tests.",
+  "language": "any",
+  "tech": "express|fastify|flask|fastapi|spring|rails|laravel|gin",
+  "category": "tasks",
+  "subcategory": "generate",
+  "tags": ["backend", "endpoint", "api"],
+  "inputs": [
+    { "name": "framework", "type": "enum", "required": true, "enum": ["express", "fastify", "flask", "fastapi", "spring", "rails", "laravel", "gin"], "default": "express" },
+    { "name": "route", "type": "string", "required": true },
+    { "name": "method", "type": "enum", "required": true, "enum": ["GET", "POST", "PUT", "PATCH", "DELETE"], "default": "GET" }
+  ],
+  "context": "validate inputs; handle errors; return proper status codes.",
+  "instructions": "1) add route with validation. 2) implement handler. 3) write integration tests. 4) include example requests. return code only.",
+  "model_tips": "prefer schema-first.",
+  "risks": "missing edge cases.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

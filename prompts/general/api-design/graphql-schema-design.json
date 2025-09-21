@@ -1,0 +1,18 @@
+{
+  "title": "graphql schema design",
+  "description": "design a clear, performant graphql schema with good pagination and errors.",
+  "language": null,
+  "tech": "graphql",
+  "category": "general",
+  "subcategory": "api-design",
+  "tags": ["api", "graphql", "schema"],
+  "inputs": [
+    { "name": "domain_model", "type": "markdown", "required": true }
+  ],
+  "context": "prefer explicit nullability and connection-style pagination.",
+  "instructions": "1) define types and relationships. 2) design queries/mutations and input types. 3) add pagination, filtering, and errors. 4) include resolver performance notes.",
+  "model_tips": "avoid mega queries; consider dataloader.",
+  "risks": "n+1 queries; unclear nullability.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

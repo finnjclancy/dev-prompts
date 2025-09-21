@@ -1,0 +1,18 @@
+{
+  "title": "workspace structure review",
+  "description": "review and propose improvements to workspace/monorepo structure.",
+  "language": null,
+  "tech": null,
+  "category": "tasks",
+  "subcategory": "scaffolding",
+  "tags": ["workspace", "monorepo", "structure"],
+  "inputs": [
+    { "name": "repo_context", "type": "markdown", "required": true }
+  ],
+  "context": "encourage clear boundaries and ownership.",
+  "instructions": "1) map current structure. 2) propose target layout with reasons. 3) define module boundaries and shared utilities. 4) outline migration steps.",
+  "model_tips": "avoid over-abstracting.",
+  "risks": "too many packages; dependency sprawl.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

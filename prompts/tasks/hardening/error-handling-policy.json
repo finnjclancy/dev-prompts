@@ -1,0 +1,18 @@
+{
+  "title": "error handling policy",
+  "description": "standardize error types, wrapping, logging, and propagation.",
+  "language": "any",
+  "tech": null,
+  "category": "tasks",
+  "subcategory": "hardening",
+  "tags": ["errors", "logging", "standards"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": false }
+  ],
+  "context": "avoid swallowing errors; prefer typed errors and context.",
+  "instructions": "1) define error taxonomy. 2) wrap and propagate with context. 3) log with structure and levels. 4) provide examples and a small diff.",
+  "model_tips": "use correlation ids for tracing.",
+  "risks": "over-logging; pii in logs.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "micro-optimizations checklist",
+  "description": "apply safe micro-optimizations on hot code paths.",
+  "language": "any",
+  "tech": null,
+  "category": "general",
+  "subcategory": "performance",
+  "tags": ["performance", "micro-optimization"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true }
+  ],
+  "context": "only optimize proven hotspots; keep readability.",
+  "instructions": "1) identify allocations and tight loops. 2) reduce copies/boxing and unnecessary branches. 3) precompute invariants and cache results. 4) show a small diff with benchmarks if possible.",
+  "model_tips": "call out tradeoffs explicitly.",
+  "risks": "hard-to-read code for tiny gains.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

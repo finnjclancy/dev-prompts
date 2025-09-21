@@ -1,0 +1,18 @@
+{
+  "title": "write a clear pr description",
+  "description": "create a helpful pr description with context, changes, and risks.",
+  "language": null,
+  "tech": "git",
+  "category": "general",
+  "subcategory": "git-and-commit",
+  "tags": ["git", "pr", "writing"],
+  "inputs": [
+    { "name": "changes_summary", "type": "markdown", "required": true }
+  ],
+  "context": "optimize for reviewer time.",
+  "instructions": "1) explain context and intent. 2) list key changes. 3) outline test/verification steps. 4) note risks and rollbacks.",
+  "model_tips": "prefer bullet lists.",
+  "risks": "missing context leads to delays.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

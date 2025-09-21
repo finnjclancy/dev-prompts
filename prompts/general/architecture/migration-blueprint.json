@@ -1,0 +1,18 @@
+{
+  "title": "migration blueprint",
+  "description": "plan a safe migration with rollout, fallback, and test strategy.",
+  "language": null,
+  "tech": null,
+  "category": "general",
+  "subcategory": "architecture",
+  "tags": ["migration", "architecture"],
+  "inputs": [
+    { "name": "change_overview", "type": "markdown", "required": true }
+  ],
+  "context": "prefer reversible steps; dark launch where possible.",
+  "instructions": "1) define current vs target state. 2) outline phases with checkpoints. 3) add data migration plan and backfill. 4) define rollout, monitoring, and rollback.",
+  "model_tips": "keep blast radius small.",
+  "risks": "data loss, downtime.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

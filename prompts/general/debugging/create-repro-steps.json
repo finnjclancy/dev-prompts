@@ -1,0 +1,19 @@
+{
+  "title": "create minimal repro steps",
+  "description": "write deterministic, minimal reproduction steps for a bug.",
+  "language": "any",
+  "tech": null,
+  "category": "general",
+  "subcategory": "debugging",
+  "tags": ["debugging", "repro", "triage"],
+  "inputs": [
+    { "name": "symptoms", "type": "markdown", "required": true },
+    { "name": "environment", "type": "markdown", "required": false }
+  ],
+  "context": "prefer smallest scope that still fails; remove non-essentials.",
+  "instructions": "1) restate the failure and expected behavior. 2) propose minimal steps to reproduce (env, data, actions). 3) attach a tiny code snippet or script if helpful. 4) include a sanity check to confirm the repro.",
+  "model_tips": "use seed data and fixed timestamps to avoid flakiness.",
+  "risks": "repro depends on external services.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "craft a regex",
+  "description": "write a safe, readable regex with examples and tests.",
+  "language": null,
+  "tech": "regex",
+  "category": "general",
+  "subcategory": "regex",
+  "tags": ["regex", "validation"],
+  "inputs": [
+    { "name": "pattern_description", "type": "markdown", "required": true }
+  ],
+  "context": "avoid catastrophic backtracking; prefer clarity.",
+  "instructions": "1) propose a regex with comments. 2) provide positive/negative examples. 3) add tests in the target language. 4) note performance and pitfalls.",
+  "model_tips": "use atomic groups or possessive quantifiers if needed.",
+  "risks": "backtracking explosions; locale issues.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

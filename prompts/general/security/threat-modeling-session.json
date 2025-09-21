@@ -1,0 +1,18 @@
+{
+  "title": "threat modeling session",
+  "description": "run a quick stride-based threat model and propose mitigations.",
+  "language": null,
+  "tech": null,
+  "category": "general",
+  "subcategory": "security",
+  "tags": ["security", "threat-modeling"],
+  "inputs": [
+    { "name": "system_overview", "type": "markdown", "required": true }
+  ],
+  "context": "prioritize high-impact mitigations; track assumptions.",
+  "instructions": "1) map data flows and trust boundaries. 2) identify threats (stride). 3) propose mitigations and owners. 4) output a concise table and follow-ups.",
+  "model_tips": "avoid generic mitigations; tie to specific assets.",
+  "risks": "scope creep; missed third-party integrations.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "project scaffold",
+  "description": "generate a sensible project scaffold with scripts and config.",
+  "language": "any",
+  "tech": null,
+  "category": "tasks",
+  "subcategory": "scaffolding",
+  "tags": ["scaffold", "init", "project"],
+  "inputs": [
+    { "name": "stack", "type": "enum", "required": true, "enum": ["node-ts", "python", "go"], "default": "node-ts" },
+    { "name": "package_manager", "type": "enum", "required": false, "enum": ["npm", "yarn", "pnpm"], "default": "pnpm" }
+  ],
+  "context": "prefer minimal dependencies and clear scripts.",
+  "instructions": "1) create directories and base files. 2) add tooling configs (lint/test/format). 3) add scripts for dev/test/build. 4) output file tree and key files.",
+  "model_tips": "avoid over-scaffolding.",
+  "risks": "tooling mismatch.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

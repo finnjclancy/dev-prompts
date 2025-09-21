@@ -1,0 +1,18 @@
+{
+  "title": "performance profiling plan",
+  "description": "plan a short profiling session to identify hotspots and measure impact.",
+  "language": "any",
+  "tech": null,
+  "category": "general",
+  "subcategory": "performance",
+  "tags": ["performance", "profiling", "optimization"],
+  "inputs": [
+    { "name": "workload", "type": "markdown", "required": true }
+  ],
+  "context": "measure before change; isolate variables; keep runs comparable.",
+  "instructions": "1) pick representative scenarios and data. 2) choose profiling tools and granularity. 3) run baseline and collect metrics. 4) propose next experiments and success criteria.",
+  "model_tips": "separate cpu, memory, io; avoid mixing changes.",
+  "risks": "heisenberg effects from profilers.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

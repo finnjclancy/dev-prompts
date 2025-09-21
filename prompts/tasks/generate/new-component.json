@@ -1,0 +1,20 @@
+{
+  "title": "generate a new ui component",
+  "description": "scaffold an accessible, testable ui component with clear props.",
+  "language": "typescript",
+  "tech": "react|vue|svelte",
+  "category": "tasks",
+  "subcategory": "generate",
+  "tags": ["component", "scaffold", "ui"],
+  "inputs": [
+    { "name": "framework", "type": "enum", "required": true, "enum": ["react", "vue", "svelte"], "default": "react" },
+    { "name": "component_name", "type": "string", "required": true },
+    { "name": "props_description", "type": "markdown", "required": true }
+  ],
+  "context": "prefer functional components and accessibility.",
+  "instructions": "1) define props/types. 2) generate component with a11y and keyboard support. 3) include basic tests and usage example. return code only.",
+  "model_tips": "avoid overly generic props.",
+  "risks": "unnecessary re-renders.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

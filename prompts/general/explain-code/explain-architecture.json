@@ -1,0 +1,19 @@
+{
+  "title": "explain architecture",
+  "description": "describe responsibilities, boundaries, and data flow for the selected module(s).",
+  "language": "any",
+  "tech": "generic",
+  "category": "general",
+  "subcategory": "explain-code",
+  "tags": ["architecture", "explain", "diagram"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": false },
+    { "name": "repo_context", "type": "markdown", "required": false }
+  ],
+  "context": "aim for clear boundaries and dependency directions.",
+  "instructions": "1) list modules and their responsibilities. 2) map dependencies and direction. 3) describe data flow and lifecycle. 4) call out coupling, cohesion, and hotspots. 5) provide a mermaid diagram code block.",
+  "model_tips": "prefer simple diagrams first.",
+  "risks": "over-generalizing without full repo context.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

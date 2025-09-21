@@ -1,0 +1,19 @@
+{
+  "title": "generate setup instructions",
+  "description": "write clear setup steps for a new developer.",
+  "language": null,
+  "tech": null,
+  "category": "tasks",
+  "subcategory": "onboarding",
+  "tags": ["onboarding", "setup", "docs"],
+  "inputs": [
+    { "name": "repo_context", "type": "markdown", "required": true },
+    { "name": "platforms", "type": "enum", "required": false, "enum": ["mac", "linux", "windows"], "default": "mac" }
+  ],
+  "context": "be explicit; assume nothing preinstalled.",
+  "instructions": "1) list prerequisites. 2) provide install commands. 3) add env configuration. 4) show a quick sanity check command.",
+  "model_tips": "prefer copy/paste commands.",
+  "risks": "platform differences.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "draft a friendly readme",
+  "description": "write a casual, clear readme with getting started and faq.",
+  "language": null,
+  "tech": null,
+  "category": "general",
+  "subcategory": "documentation",
+  "tags": ["docs", "readme", "writing"],
+  "inputs": [
+    { "name": "project_description", "type": "markdown", "required": true },
+    { "name": "install_steps", "type": "markdown", "required": false },
+    { "name": "usage_examples", "type": "markdown", "required": false }
+  ],
+  "context": "tone should be human and casual; minimize jargon.",
+  "instructions": "1) write a quick intro. 2) add install and quick start. 3) include examples and faq. 4) add contributing and license stubs. return markdown.",
+  "model_tips": "prefer short sections and code blocks.",
+  "risks": "outdated instructions if versions are unspecified.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

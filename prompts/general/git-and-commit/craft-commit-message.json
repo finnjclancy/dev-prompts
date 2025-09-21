@@ -1,0 +1,18 @@
+{
+  "title": "craft a great commit message",
+  "description": "write a clear, concise commit message following a style guide.",
+  "language": null,
+  "tech": "git",
+  "category": "general",
+  "subcategory": "git-and-commit",
+  "tags": ["git", "commit", "writing"],
+  "inputs": [
+    { "name": "changes_summary", "type": "markdown", "required": true }
+  ],
+  "context": "prefer imperative mood and short subject.",
+  "instructions": "1) craft a subject line (<= 50 chars). 2) write a body explaining why, not just what. 3) add breaking change note if any. 4) include issue refs.",
+  "model_tips": "avoid passive voice.",
+  "risks": "too long; no context for reviewers.",
+  "references": ["https://cbea.ms/git-commit/"],
+  "output_format": { "type": "markdown" }
+}
