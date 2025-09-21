@@ -1,0 +1,18 @@
+{
+  "title": "ruby: rspec shared examples",
+  "description": "create shared examples to DRY tests across implementations.",
+  "language": "ruby",
+  "tech": "rspec",
+  "category": "languages",
+  "subcategory": "ruby",
+  "tags": ["ruby", "rspec", "testing"],
+  "inputs": [
+    { "name": "behavior_contract", "type": "markdown", "required": true }
+  ],
+  "context": "prefer clear, composable shared examples; avoid overuse.",
+  "instructions": "1) define behavior contract. 2) implement shared examples. 3) include them in multiple specs. 4) show example usage.",
+  "model_tips": "keep setup minimal.",
+  "risks": "indirection hurting readability.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

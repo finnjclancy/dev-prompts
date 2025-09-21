@@ -1,0 +1,19 @@
+{
+  "title": "c#: async/await best practices",
+  "description": "refactor to proper async/await patterns and avoid deadlocks.",
+  "language": "csharp",
+  "tech": ".net",
+  "category": "languages",
+  "subcategory": "csharp",
+  "tags": ["c#", "async", "await"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true }
+  ],
+  "context": "avoid .Result/.Wait(); use ConfigureAwait appropriately; propagate cancellation tokens.",
+  "instructions": "1) identify sync-over-async anti-patterns. 2) refactor to async all the way. 3) add cancellation tokens. 4) provide tests. return code only.",
+  "model_tips": "prefer ValueTask when appropriate.",
+  "risks": "context capture deadlocks in ui apps.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

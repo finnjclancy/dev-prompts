@@ -1,0 +1,19 @@
+{
+  "title": "eslint rules curation",
+  "description": "define a balanced eslint ruleset for code quality and DX.",
+  "language": null,
+  "tech": "eslint",
+  "category": "monorepo-and-tooling",
+  "subcategory": "code-quality",
+  "tags": ["eslint", "lint", "quality"],
+  "inputs": [
+    { "name": "project_stack", "type": "markdown", "required": true }
+  ],
+  "context": "favor correctness and clarity; minimize churn and false positives.",
+  "instructions": "1) propose a rule set (extends + custom) with rationale. 2) add overrides per package/file type. 3) configure import/order and unused vars. 4) output .eslintrc.* and notes.",
+  "model_tips": "enable autofix where safe.",
+  "risks": "rule noise; conflicting plugins.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

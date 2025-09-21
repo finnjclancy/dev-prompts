@@ -1,0 +1,19 @@
+{
+  "title": "kotlin: coroutines & flow patterns",
+  "description": "use structured concurrency and flow operators safely.",
+  "language": "kotlin",
+  "tech": "kotlin",
+  "category": "languages",
+  "subcategory": "kotlin",
+  "tags": ["kotlin", "coroutines", "flow"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": false }
+  ],
+  "context": "scope lifecycles correctly; handle cancellation; avoid blocking.",
+  "instructions": "1) use coroutine scopes and dispatchers. 2) refactor to flows with operators. 3) add error handling and retries. 4) show tests.",
+  "model_tips": "use StateFlow/SharedFlow where appropriate.",
+  "risks": "leaked coroutines; incorrect dispatcher use.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

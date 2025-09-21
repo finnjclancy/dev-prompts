@@ -1,0 +1,19 @@
+{
+  "title": "k6 performance scenarios",
+  "description": "design realistic load scenarios with thresholds and tags in k6.",
+  "language": null,
+  "tech": "k6",
+  "category": "testing",
+  "subcategory": "performance",
+  "tags": ["k6", "load-testing", "performance"],
+  "inputs": [
+    { "name": "endpoints", "type": "markdown", "required": true }
+  ],
+  "context": "model real user behavior; include ramp-up, steady, and spike phases.",
+  "instructions": "1) define scenarios and VU patterns. 2) add thresholds and checks. 3) implement tags/metrics. 4) output a runnable k6 script.",
+  "model_tips": "keep test data deterministic.",
+  "risks": "overload non-prod deps.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

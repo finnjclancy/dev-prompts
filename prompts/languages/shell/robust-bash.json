@@ -1,0 +1,18 @@
+{
+  "title": "robust bash scripting",
+  "description": "write portable, safe bash scripts with strict modes and traps.",
+  "language": "shell",
+  "tech": "bash",
+  "category": "languages",
+  "subcategory": "shell",
+  "tags": ["bash", "shell", "scripting"],
+  "inputs": [
+    { "name": "script_goal", "type": "markdown", "required": true }
+  ],
+  "context": "use set -Eeuo pipefail; IFS=$'\n\t'; quote variables; avoid ls parsing.",
+  "instructions": "1) scaffold a script with strict modes and usage/help. 2) add argument parsing (getopts). 3) implement error handling with traps. 4) include tests/examples.",
+  "model_tips": "prefer printf over echo; use mktemp for temp files.",
+  "risks": "non-portable features; globbing surprises.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

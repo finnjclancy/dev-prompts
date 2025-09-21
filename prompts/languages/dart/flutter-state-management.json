@@ -1,0 +1,18 @@
+{
+  "title": "flutter state management",
+  "description": "choose provider/bloc/riverrpod with clean state and side effects.",
+  "language": "dart",
+  "tech": "flutter",
+  "category": "languages",
+  "subcategory": "dart",
+  "tags": ["flutter", "state", "bloc", "provider"],
+  "inputs": [
+    { "name": "screen_description", "type": "markdown", "required": true }
+  ],
+  "context": "isolate side effects; keep ui reactive; test business logic.",
+  "instructions": "1) pick an approach (provider/bloc/riverpod) with rationale. 2) define states/events. 3) implement and wire into widgets. 4) add tests.",
+  "model_tips": "avoid rebuilding entire trees.",
+  "risks": "state duplication; race conditions.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

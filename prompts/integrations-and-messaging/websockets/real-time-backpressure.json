@@ -1,0 +1,19 @@
+{
+  "title": "websockets real-time backpressure",
+  "description": "implement flow control and backpressure for realtime connections.",
+  "language": null,
+  "tech": "websockets",
+  "category": "integrations-and-messaging",
+  "subcategory": "websockets",
+  "tags": ["websockets", "realtime", "backpressure"],
+  "inputs": [
+    { "name": "traffic_profile", "type": "markdown", "required": true }
+  ],
+  "context": "avoid unbounded queues; drop/merge low priority updates.",
+  "instructions": "1) design message queues and limits. 2) implement rate limiting and batching. 3) add heartbeat/ping and reconnect handling. 4) show client/server code snippets.",
+  "model_tips": "prefer binary frames for large payloads.",
+  "risks": "queue growth; head-of-line blocking.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

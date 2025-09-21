@@ -1,0 +1,19 @@
+{
+  "title": "freertos concurrency patterns",
+  "description": "design safe task, queue, and interrupt patterns in freertos.",
+  "language": "c",
+  "tech": "freertos",
+  "category": "niche-and-embedded",
+  "subcategory": "embedded",
+  "tags": ["freertos", "embedded", "rtos"],
+  "inputs": [
+    { "name": "system_overview", "type": "markdown", "required": true }
+  ],
+  "context": "avoid blocking in isrs; use queues/semaphores wisely; bound stack usage.",
+  "instructions": "1) propose task partitioning and priorities. 2) design communication via queues/semphr. 3) handle isr-safe operations. 4) provide code templates and timing notes.",
+  "model_tips": "use static allocation where possible.",
+  "risks": "priority inversion; missed deadlines.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

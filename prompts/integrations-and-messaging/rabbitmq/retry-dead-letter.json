@@ -1,0 +1,19 @@
+{
+  "title": "rabbitmq retry & dead-letter setup",
+  "description": "set up retries with backoff and dead-letter queues.",
+  "language": null,
+  "tech": "rabbitmq",
+  "category": "integrations-and-messaging",
+  "subcategory": "rabbitmq",
+  "tags": ["rabbitmq", "retry", "dlq"],
+  "inputs": [
+    { "name": "queue_name", "type": "string", "required": true }
+  ],
+  "context": "prefer bounded retries and idempotent consumers.",
+  "instructions": "1) create main, retry, and dlq queues with appropriate bindings. 2) configure x-dead-letter-exchange and per-queue ttl for backoff. 3) document consumer behavior on retries. 4) output config and examples.",
+    "model_tips": "use correlation ids for de-duplication.",
+  "risks": "retry storms; message reordering.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

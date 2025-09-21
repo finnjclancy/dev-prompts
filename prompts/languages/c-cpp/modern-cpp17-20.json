@@ -1,0 +1,18 @@
+{
+  "title": "modern c++17/20 refactor",
+  "description": "refactor to modern c++ features for safety and clarity.",
+  "language": "cpp",
+  "tech": "c++",
+  "category": "languages",
+  "subcategory": "c-cpp",
+  "tags": ["cpp", "modern", "refactor"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true }
+  ],
+  "context": "prefer smart pointers, span, string_view, optional/variant, ranges.",
+  "instructions": "1) identify legacy patterns. 2) refactor using modern types and algorithms. 3) enforce RAII and noexcept where applicable. 4) provide tests.",
+  "model_tips": "avoid unnecessary heap; prefer value semantics.",
+  "risks": "abi changes; compile-time constraints.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "sql: write-optimized queries",
+  "description": "optimize queries for write-heavy systems with proper indexing and batching.",
+  "language": "sql",
+  "tech": "sql",
+  "category": "languages",
+  "subcategory": "sql",
+  "tags": ["sql", "optimization", "writes"],
+  "inputs": [
+    { "name": "queries", "type": "markdown", "required": true },
+    { "name": "schema", "type": "markdown", "required": false }
+  ],
+  "context": "prefer upserts, batching, and avoiding hot indexes.",
+  "instructions": "1) analyze write patterns. 2) propose schema/index adjustments. 3) rewrite queries for batching/locking strategies. 4) outline verification.",
+  "model_tips": "avoid unnecessary indexes on high-write tables.",
+  "risks": "lock contention; replication lag.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "architecture diagram prompts",
+  "description": "generate a clear, accurate architecture diagram (mermaid) with annotations.",
+  "language": null,
+  "tech": "diagrams",
+  "category": "ux-docs-writing",
+  "subcategory": "technical-writing",
+  "tags": ["architecture", "diagram", "docs"],
+  "inputs": [
+    { "name": "system_overview", "type": "markdown", "required": true }
+  ],
+  "context": "prefer simple shapes and flows; call out boundaries and data stores.",
+  "instructions": "1) list components and relationships. 2) output a mermaid diagram code block. 3) add notes on tradeoffs and risks. 4) include next steps.",
+  "model_tips": "avoid clutter; group by domain.",
+  "risks": "oversimplification; missing failure paths.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

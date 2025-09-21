@@ -1,0 +1,19 @@
+{
+  "title": "realtime scheduling & latency analysis",
+  "description": "analyze worst-case execution time and scheduling strategy.",
+  "language": null,
+  "tech": "realtime",
+  "category": "niche-and-embedded",
+  "subcategory": "realtime",
+  "tags": ["realtime", "scheduling", "latency"],
+  "inputs": [
+    { "name": "task_set", "type": "markdown", "required": true }
+  ],
+  "context": "consider priority inversion, preemption costs, and interrupt latencies.",
+  "instructions": "1) define tasks (period, wcet, deadline). 2) evaluate schedulability (rm/edf). 3) propose priorities and locking. 4) recommend instrumentation to measure latency.",
+  "model_tips": "apply utilization bounds.",
+  "risks": "overlooked interrupt routines.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

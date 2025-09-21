@@ -1,0 +1,20 @@
+{
+  "title": "kafka schema evolution",
+  "description": "manage backward/forward compatibility with schema registry.",
+  "language": null,
+  "tech": "kafka",
+  "category": "integrations-and-messaging",
+  "subcategory": "kafka",
+  "tags": ["kafka", "schema", "compatibility"],
+  "inputs": [
+    { "name": "current_schema", "type": "json", "required": true },
+    { "name": "change_request", "type": "markdown", "required": true }
+  ],
+  "context": "prefer additive changes; avoid breaking fields and ids.",
+  "instructions": "1) assess compatibility (backward/forward/full). 2) propose schema changes. 3) define migration and rollout steps. 4) add validation tests.",
+  "model_tips": "use default values to preserve compatibility.",
+  "risks": "consumer breakage; id conflicts.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

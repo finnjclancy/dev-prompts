@@ -1,0 +1,18 @@
+{
+  "title": "node.js error handling patterns",
+  "description": "standardize error creation, wrapping, logging, and propagation in node.js.",
+  "language": "javascript",
+  "tech": "node",
+  "category": "languages",
+  "subcategory": "javascript",
+  "tags": ["node", "errors", "logging"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": false }
+  ],
+  "context": "prefer error subclasses; include causal chains; structured logs.",
+  "instructions": "1) define custom error classes and taxonomy. 2) wrap and rethrow with cause. 3) log with structure and correlation ids. 4) add express/fastify error middleware examples.",
+  "model_tips": "avoid swallowing errors; separate user-facing vs internal messages.",
+  "risks": "leaking sensitive info in logs.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "kafka topic design",
+  "description": "design topics, partitions, keys, and retention for your workload.",
+  "language": null,
+  "tech": "kafka",
+  "category": "integrations-and-messaging",
+  "subcategory": "kafka",
+  "tags": ["kafka", "topics", "design"],
+  "inputs": [
+    { "name": "workload", "type": "markdown", "required": true }
+  ],
+  "context": "opt for keying that preserves ordering where needed; avoid hot partitions.",
+  "instructions": "1) propose topic namespacing and conventions. 2) pick partitions/replication factoring in throughput and ordering. 3) define retention/compaction. 4) outline dead letter topics.",
+  "model_tips": "use compacted topics for state-like streams.",
+  "risks": "skewed partitions; unbounded retention.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

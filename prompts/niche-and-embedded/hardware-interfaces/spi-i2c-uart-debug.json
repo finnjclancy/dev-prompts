@@ -1,0 +1,19 @@
+{
+  "title": "spi/i2c/uart debug checklist",
+  "description": "systematically debug common serial buses with tools and checks.",
+  "language": null,
+  "tech": "embedded",
+  "category": "niche-and-embedded",
+  "subcategory": "hardware-interfaces",
+  "tags": ["spi", "i2c", "uart", "debug"],
+  "inputs": [
+    { "name": "symptoms", "type": "markdown", "required": true }
+  ],
+  "context": "verify electrical and protocol layers; use logic analyzer where possible.",
+  "instructions": "1) electrical checks (power, pull-ups, wiring). 2) protocol config (clock, polarity, addressing, baud). 3) capture and analyze traces. 4) propose fixes and validation steps.",
+  "model_tips": "prefer minimal reproducible tests.",
+  "risks": "signal integrity; timing mismatches.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

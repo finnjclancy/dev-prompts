@@ -1,0 +1,19 @@
+{
+  "title": "mqtt qos strategy for iot",
+  "description": "choose qos levels, retain flags, and session settings for devices.",
+  "language": null,
+  "tech": "mqtt",
+  "category": "integrations-and-messaging",
+  "subcategory": "mqtt",
+  "tags": ["mqtt", "qos", "iot"],
+  "inputs": [
+    { "name": "device_profile", "type": "markdown", "required": true }
+  ],
+  "context": "balance delivery guarantees with bandwidth and power.",
+  "instructions": "1) define topic structure and retain usage. 2) select qos per message type. 3) set session expiry and clean start. 4) outline offline buffering and reconnect strategies.",
+  "model_tips": "avoid qos 2 unless necessary.",
+  "risks": "broker load; unnecessary latency.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

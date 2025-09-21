@@ -1,0 +1,19 @@
+{
+  "title": "agent task decomposition",
+  "description": "break a complex goal into tractable, verifiable sub-tasks.",
+  "language": null,
+  "tech": "agents",
+  "category": "ml-ai",
+  "subcategory": "agents",
+  "tags": ["agents", "planning", "tasks"],
+  "inputs": [
+    { "name": "goal", "type": "markdown", "required": true }
+  ],
+  "context": "prefer measurable outcomes and stop conditions; track dependencies.",
+  "instructions": "1) restate goal and constraints. 2) decompose into ordered tasks with owners/tools. 3) define success criteria per task. 4) propose a verification plan and rollback steps.",
+  "model_tips": "limit branching; avoid loops without guards.",
+  "risks": "task explosion; unclear acceptance criteria.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

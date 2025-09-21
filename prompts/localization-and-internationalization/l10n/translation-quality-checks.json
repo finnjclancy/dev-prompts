@@ -1,0 +1,19 @@
+{
+  "title": "l10n translation quality checks",
+  "description": "define checks for placeholders, length, tone, and terminology consistency.",
+  "language": null,
+  "tech": "l10n",
+  "category": "localization-and-internationalization",
+  "subcategory": "l10n",
+  "tags": ["l10n", "quality", "translation"],
+  "inputs": [
+    { "name": "strings", "type": "markdown", "required": true }
+  ],
+  "context": "prefer automated checks plus human review for critical strings.",
+  "instructions": "1) verify placeholder integrity and order. 2) check length constraints and truncation risk. 3) enforce terminology and tone. 4) output flagged items and fixes.",
+  "model_tips": "keep diffs small and precise.",
+  "risks": "cultural nuances missed.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

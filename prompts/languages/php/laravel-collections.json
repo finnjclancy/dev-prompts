@@ -1,0 +1,18 @@
+{
+  "title": "laravel collections patterns",
+  "description": "use collection pipelines for readable data transformations.",
+  "language": "php",
+  "tech": "laravel",
+  "category": "languages",
+  "subcategory": "php",
+  "tags": ["php", "laravel", "collections"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true }
+  ],
+  "context": "prefer collection methods over manual loops when clearer.",
+  "instructions": "1) identify transformation steps. 2) refactor to collection pipeline. 3) ensure lazy evaluation where needed. 4) add tests. return code only.",
+  "model_tips": "avoid deeply nested callbacks.",
+  "risks": "hidden performance issues on large datasets.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

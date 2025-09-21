@@ -1,0 +1,19 @@
+{
+  "title": "swiftui state management",
+  "description": "choose @State/@Binding/@ObservedObject/@EnvironmentObject appropriately.",
+  "language": "swift",
+  "tech": "swiftui",
+  "category": "languages",
+  "subcategory": "swift",
+  "tags": ["swift", "swiftui", "state"],
+  "inputs": [
+    { "name": "component_description", "type": "markdown", "required": true }
+  ],
+  "context": "avoid duplication of truth; keep data flow unidirectional.",
+  "instructions": "1) propose state ownership and bindings. 2) refactor view hierarchy accordingly. 3) add previews and tests. 4) note performance considerations.",
+  "model_tips": "use @MainActor where needed.",
+  "risks": "update loops; unexpected re-renders.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

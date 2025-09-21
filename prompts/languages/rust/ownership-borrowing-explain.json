@@ -1,0 +1,19 @@
+{
+  "title": "rust ownership & borrowing: explain and refactor",
+  "description": "explain borrow checker errors and refactor to valid lifetimes.",
+  "language": "rust",
+  "tech": "rust",
+  "category": "languages",
+  "subcategory": "rust",
+  "tags": ["rust", "ownership", "borrowing", "lifetimes"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true }
+  ],
+  "context": "preserve performance; avoid unnecessary clones; prefer clear lifetimes.",
+  "instructions": "1) restate the borrow checker error in plain terms. 2) highlight the conflicting borrows/lifetimes. 3) propose one or two refactors (restructure borrows, move ownership boundaries, introduce smaller scopes). 4) output corrected code only.",
+  "model_tips": "use references and lifetimes explicitly only when needed.",
+  "risks": "hidden clones or moves changing performance.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

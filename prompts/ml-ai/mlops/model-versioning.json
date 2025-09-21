@@ -1,0 +1,19 @@
+{
+  "title": "mlops: model versioning",
+  "description": "define a reliable model versioning, registry, and promotion strategy.",
+  "language": null,
+  "tech": "mlops",
+  "category": "ml-ai",
+  "subcategory": "mlops",
+  "tags": ["mlops", "registry", "versioning"],
+  "inputs": [
+    { "name": "model_catalog", "type": "markdown", "required": false }
+  ],
+  "context": "track lineage, data, and metrics; support canary and rollback.",
+  "instructions": "1) define versions and metadata (schema, metrics, data). 2) choose registry and storage. 3) outline promotion gates and rollbacks. 4) include api examples.",
+  "model_tips": "log model and data hashes.",
+  "risks": "stale models; metric drift.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

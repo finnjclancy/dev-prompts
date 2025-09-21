@@ -1,0 +1,19 @@
+{
+  "title": "npm/yarn/pnpm tips",
+  "description": "apply reliable dependency and script management across package managers.",
+  "language": null,
+  "tech": "npm|yarn|pnpm",
+  "category": "monorepo-and-tooling",
+  "subcategory": "package-managers",
+  "tags": ["package-manager", "npm", "yarn", "pnpm"],
+  "inputs": [
+    { "name": "workspace_type", "type": "enum", "required": false, "enum": ["single", "monorepo"], "default": "monorepo" }
+  ],
+  "context": "pin lockfiles; use scripts consistently; prefer workspaces.",
+  "instructions": "1) standardize scripts (build/test/lint/format). 2) choose lockfile strategy and cache. 3) set workspace settings and hoisting. 4) add ci tips.",
+  "model_tips": "avoid mixing managers.",
+  "risks": "lockfile drift; duplicate deps.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

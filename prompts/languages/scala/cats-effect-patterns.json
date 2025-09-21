@@ -1,0 +1,19 @@
+{
+  "title": "scala: cats-effect patterns",
+  "description": "structure effects, resources, and concurrency with cats-effect.",
+  "language": "scala",
+  "tech": "cats-effect",
+  "category": "languages",
+  "subcategory": "scala",
+  "tags": ["scala", "cats-effect", "fp"],
+  "inputs": [
+    { "name": "module_description", "type": "markdown", "required": false }
+  ],
+  "context": "prefer Resource for lifecycles; supervise fibers; handle cancellation.",
+  "instructions": "1) model resources with Resource. 2) design effectful apis with IO. 3) add concurrency with fibers and coordination. 4) include tests.",
+  "model_tips": "avoid unsafeRun outside entrypoints.",
+  "risks": "deadlocks; unclosed resources.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

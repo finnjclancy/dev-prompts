@@ -1,0 +1,19 @@
+{
+  "title": "playwright e2e: add trace analysis",
+  "description": "enable trace, record steps, and analyze flaky e2e failures.",
+  "language": null,
+  "tech": "playwright",
+  "category": "testing",
+  "subcategory": "e2e",
+  "tags": ["playwright", "e2e", "trace"],
+  "inputs": [
+    { "name": "test_description", "type": "markdown", "required": true }
+  ],
+  "context": "record videos, traces, and network; add retries with fixtures.",
+  "instructions": "1) enable trace and video. 2) add fixtures for auth and network. 3) show flake triage steps with trace viewer. 4) output updated config and an example test.",
+  "model_tips": "isolate tests and reset state.",
+  "risks": "slow tests; large artifacts.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

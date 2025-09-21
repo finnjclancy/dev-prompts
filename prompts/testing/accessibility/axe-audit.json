@@ -1,0 +1,19 @@
+{
+  "title": "accessibility audit with axe",
+  "description": "run automated a11y checks with axe and fix critical issues.",
+  "language": null,
+  "tech": "axe",
+  "category": "testing",
+  "subcategory": "accessibility",
+  "tags": ["a11y", "axe", "testing"],
+  "inputs": [
+    { "name": "page_or_component", "type": "markdown", "required": true }
+  ],
+  "context": "fix critical and serious issues first; provide code fixes.",
+  "instructions": "1) set up axe in tests or browser. 2) run audit on target. 3) list findings with severity and fixes. 4) output code changes and re-run results.",
+  "model_tips": "include keyboard and focus checks.",
+  "risks": "false positives; missing manual checks.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

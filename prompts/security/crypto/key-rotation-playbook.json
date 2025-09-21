@@ -1,0 +1,19 @@
+{
+  "title": "key rotation playbook",
+  "description": "plan and execute safe key rotation with minimal downtime.",
+  "language": null,
+  "tech": "crypto",
+  "category": "security",
+  "subcategory": "crypto",
+  "tags": ["keys", "rotation", "security"],
+  "inputs": [
+    { "name": "key_inventory", "type": "markdown", "required": true }
+  ],
+  "context": "use dual-running keys and audit logs; revoke old keys thoroughly.",
+  "instructions": "1) classify keys and usage. 2) define rotation steps and validation. 3) implement rollout with fallbacks. 4) document verification and post-rotation tasks.",
+  "model_tips": "avoid shared keys; prefer short lifetimes.",
+  "risks": "service interruptions; stale secrets.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

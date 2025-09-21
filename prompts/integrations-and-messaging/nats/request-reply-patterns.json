@@ -1,0 +1,19 @@
+{
+  "title": "nats request-reply patterns",
+  "description": "implement robust request-reply with timeouts and retries.",
+  "language": null,
+  "tech": "nats",
+  "category": "integrations-and-messaging",
+  "subcategory": "nats",
+  "tags": ["nats", "request-reply", "messaging"],
+  "inputs": [
+    { "name": "subjects", "type": "markdown", "required": true }
+  ],
+  "context": "set sensible timeouts, correlation ids, and backpressure.",
+  "instructions": "1) define subject naming and versions. 2) implement request with timeout and retries. 3) implement responder with concurrency limits. 4) show code examples.",
+  "model_tips": "use inbox subjects for replies.",
+  "risks": "unbounded retries; reply subject misuse.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

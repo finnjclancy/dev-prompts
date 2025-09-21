@@ -1,0 +1,19 @@
+{
+  "title": "golden tests",
+  "description": "create golden/master tests to capture expected outputs.",
+  "language": "any",
+  "tech": "testing",
+  "category": "testing",
+  "subcategory": "unit",
+  "tags": ["testing", "golden", "snapshots"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": true }
+  ],
+  "context": "store stable outputs and diff on regression; keep small and readable.",
+  "instructions": "1) define deterministic inputs. 2) generate golden outputs. 3) write tests that compare against goldens. 4) include update flow and review tips. return code only.",
+  "model_tips": "avoid brittle formatting; normalize whitespace if needed.",
+  "risks": "over-broad snapshots hide meaningful changes.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

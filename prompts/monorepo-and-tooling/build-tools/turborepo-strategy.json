@@ -1,0 +1,19 @@
+{
+  "title": "turborepo strategy",
+  "description": "configure pipelines, caching, and remote cache for a monorepo.",
+  "language": null,
+  "tech": "turborepo",
+  "category": "monorepo-and-tooling",
+  "subcategory": "build-tools",
+  "tags": ["turborepo", "monorepo", "caching"],
+  "inputs": [
+    { "name": "packages", "type": "markdown", "required": true }
+  ],
+  "context": "prefer cache-friendly tasks; dedupe pipelines; define dependsOn precisely.",
+  "instructions": "1) design turbo.json pipeline. 2) set cache and remote cache options. 3) define filters for ci and local dev. 4) include examples.",
+  "model_tips": "keep tasks small and consistent across packages.",
+  "risks": "cache invalidation confusion.",
+  "references": [],
+  "output_format": { "type": "json" }
+}
+

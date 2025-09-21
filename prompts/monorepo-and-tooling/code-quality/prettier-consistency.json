@@ -1,0 +1,19 @@
+{
+  "title": "prettier consistency setup",
+  "description": "standardize formatting with prettier and editor integration.",
+  "language": null,
+  "tech": "prettier",
+  "category": "monorepo-and-tooling",
+  "subcategory": "code-quality",
+  "tags": ["prettier", "formatting", "quality"],
+  "inputs": [
+    { "name": "languages", "type": "markdown", "required": true }
+  ],
+  "context": "keep config minimal; integrate with lint-staged and editorconfig.",
+  "instructions": "1) add prettier config and ignore files. 2) integrate with eslint where relevant. 3) set up pre-commit hooks. 4) provide ci checks and editor setup.",
+  "model_tips": "avoid conflicting eslint style rules.",
+  "risks": "churn on large repos.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

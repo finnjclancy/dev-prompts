@@ -1,0 +1,19 @@
+{
+  "title": "sklearn pipelines design",
+  "description": "build a robust sklearn pipeline with preprocessing, model, and evaluation.",
+  "language": "python",
+  "tech": "sklearn",
+  "category": "ml-ai",
+  "subcategory": "modeling",
+  "tags": ["sklearn", "pipeline", "ml"],
+  "inputs": [
+    { "name": "dataset_description", "type": "markdown", "required": true }
+  ],
+  "context": "separate preprocessing; use ColumnTransformer; persist with joblib.",
+  "instructions": "1) define features and preprocessing. 2) build Pipeline with model and params. 3) add cross-validation and metrics. 4) output code with fit/predict and save/load.",
+  "model_tips": "use proper train/validation splits.",
+  "risks": "data leakage; overfitting.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

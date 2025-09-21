@@ -1,0 +1,19 @@
+{
+  "title": "rabbitmq routing strategies",
+  "description": "choose exchange types and bindings for your messaging patterns.",
+  "language": null,
+  "tech": "rabbitmq",
+  "category": "integrations-and-messaging",
+  "subcategory": "rabbitmq",
+  "tags": ["rabbitmq", "routing", "exchanges"],
+  "inputs": [
+    { "name": "message_patterns", "type": "markdown", "required": true }
+  ],
+  "context": "prefer topic exchanges for flexible routing; use dead-letter queues.",
+  "instructions": "1) map patterns to direct/fanout/topic/headers. 2) define bindings and keys. 3) add retry/dead-letter strategies. 4) output config examples.",
+  "model_tips": "avoid overly broad routing keys.",
+  "risks": "binding explosion; message loss without dlq.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

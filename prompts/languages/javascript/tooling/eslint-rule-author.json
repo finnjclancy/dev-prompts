@@ -1,0 +1,19 @@
+{
+  "title": "author an eslint rule",
+  "description": "write a custom eslint rule with tests and docs.",
+  "language": "javascript",
+  "tech": "eslint",
+  "category": "languages",
+  "subcategory": "javascript/tooling",
+  "tags": ["eslint", "lint", "tooling"],
+  "inputs": [
+    { "name": "rule_goal", "type": "markdown", "required": true }
+  ],
+  "context": "prefer minimal, fast visitors; provide clear messages and docs.",
+  "instructions": "1) scaffold a rule module. 2) implement visitors and options schema. 3) add tests with valid/invalid cases. 4) write docs with examples. return code and markdown.",
+  "model_tips": "avoid expensive traversals.",
+  "risks": "false positives; perf regressions.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

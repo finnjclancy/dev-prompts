@@ -1,0 +1,19 @@
+{
+  "title": "contract tests",
+  "description": "write provider/consumer contract tests to stabilize integrations.",
+  "language": "any",
+  "tech": "testing",
+  "category": "testing",
+  "subcategory": "integration",
+  "tags": ["contract", "testing", "integration"],
+  "inputs": [
+    { "name": "api_contract", "type": "markdown", "required": true }
+  ],
+  "context": "fail fast on contract drift; run in ci.",
+  "instructions": "1) define provider contracts (schema, examples). 2) write consumer tests against mocks. 3) verify provider with pact-like tooling. 4) add ci gates.",
+  "model_tips": "prefer small, explicit examples.",
+  "risks": "false confidence if mocks diverge.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

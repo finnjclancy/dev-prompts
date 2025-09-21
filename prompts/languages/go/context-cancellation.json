@@ -1,0 +1,19 @@
+{
+  "title": "go: context cancellation patterns",
+  "description": "use context correctly to cancel work and avoid leaks.",
+  "language": "go",
+  "tech": "go",
+  "category": "languages",
+  "subcategory": "go",
+  "tags": ["go", "context", "cancellation"],
+  "inputs": [
+    { "name": "code_selection", "type": "code", "required": false }
+  ],
+  "context": "propagate context; select on ctx.Done(); stop goroutines cleanly.",
+  "instructions": "1) add context to function signatures. 2) propagate cancellation to goroutines. 3) select on ctx.Done() and handle timeouts. 4) show before/after code.",
+  "model_tips": "avoid leaking goroutines; respect deadlines.",
+  "risks": "blocking operations ignoring context.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

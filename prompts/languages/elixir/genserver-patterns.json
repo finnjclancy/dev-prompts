@@ -1,0 +1,18 @@
+{
+  "title": "elixir: genserver patterns",
+  "description": "design clear genserver apis with message handling and state.",
+  "language": "elixir",
+  "tech": "elixir",
+  "category": "languages",
+  "subcategory": "elixir",
+  "tags": ["elixir", "genserver", "otp"],
+  "inputs": [
+    { "name": "module_context", "type": "markdown", "required": false }
+  ],
+  "context": "separate call vs cast; keep state small; supervise processes.",
+  "instructions": "1) define public api and messages. 2) implement handle_call/cast/info. 3) add supervision and init. 4) include tests with assert_receive.",
+  "model_tips": "use timeouts and back-pressure.",
+  "risks": "mailbox bloat; blocking in callbacks.",
+  "references": [],
+  "output_format": { "type": "code" }
+}

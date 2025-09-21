@@ -1,0 +1,19 @@
+{
+  "title": "microcopy prompts",
+  "description": "write helpful, concise product microcopy for a ui surface.",
+  "language": null,
+  "tech": "ux-writing",
+  "category": "ux-docs-writing",
+  "subcategory": "product-copy",
+  "tags": ["ux", "microcopy", "product"],
+  "inputs": [
+    { "name": "surface_description", "type": "markdown", "required": true }
+  ],
+  "context": "be friendly and clear; avoid jargon; emphasize action.",
+  "instructions": "1) propose variants for title, body, cta, helper text, and error states. 2) suggest tone alternatives (formal, casual). 3) include a11y notes and char limits.",
+  "model_tips": "prefer simple words and short sentences.",
+  "risks": "cultural tone mismatch.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

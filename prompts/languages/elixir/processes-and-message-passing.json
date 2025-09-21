@@ -1,0 +1,19 @@
+{
+  "title": "elixir processes & message passing",
+  "description": "build resilient processes and supervision trees with clean message protocols.",
+  "language": "elixir",
+  "tech": "elixir",
+  "category": "languages",
+  "subcategory": "elixir",
+  "tags": ["elixir", "otp", "processes", "supervision"],
+  "inputs": [
+    { "name": "module_context", "type": "markdown", "required": false }
+  ],
+  "context": "prefer supervisors and GenServer; isolate failure domains; use timeouts.",
+  "instructions": "1) design a supervision tree. 2) define message formats and handle_cast/call. 3) add timeouts and crash recovery. 4) include tests with assert_received.",
+  "model_tips": "keep state minimal; avoid long-running work in handle_*.",
+  "risks": "mailbox growth; unhandled messages.",
+  "references": [],
+  "output_format": { "type": "code" }
+}
+

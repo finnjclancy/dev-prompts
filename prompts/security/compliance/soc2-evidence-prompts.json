@@ -1,0 +1,19 @@
+{
+  "title": "soc2 evidence prompts",
+  "description": "gather focused evidence for soc2 controls effectively.",
+  "language": null,
+  "tech": "compliance",
+  "category": "security",
+  "subcategory": "compliance",
+  "tags": ["soc2", "compliance", "evidence"],
+  "inputs": [
+    { "name": "control_list", "type": "markdown", "required": true }
+  ],
+  "context": "prefer automated exports and reproducible queries.",
+  "instructions": "1) map controls to evidence artifacts. 2) provide commands/queries to fetch. 3) redaction and pii handling notes. 4) output a checklist.",
+  "model_tips": "link evidence to timestamps and owners.",
+  "risks": "sensitive data exposure.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

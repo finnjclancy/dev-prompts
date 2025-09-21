@@ -1,0 +1,19 @@
+{
+  "title": "i18n pluralization rules",
+  "description": "implement correct plural forms and tests for target locales.",
+  "language": null,
+  "tech": "i18n",
+  "category": "localization-and-internationalization",
+  "subcategory": "i18n",
+  "tags": ["i18n", "pluralization", "icu"],
+  "inputs": [
+    { "name": "locales", "type": "markdown", "required": true }
+  ],
+  "context": "use cldr data; map counts to forms.",
+  "instructions": "1) list plural categories per locale. 2) provide icu messages for examples. 3) add unit tests for edge counts. 4) include developer guidance.",
+  "model_tips": "watch zero and many categories.",
+  "risks": "incorrect forms; missing context.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+

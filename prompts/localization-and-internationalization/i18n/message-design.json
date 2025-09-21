@@ -1,0 +1,19 @@
+{
+  "title": "i18n message design",
+  "description": "design translatable messages with variables, plurals, and context.",
+  "language": null,
+  "tech": "i18n",
+  "category": "localization-and-internationalization",
+  "subcategory": "i18n",
+  "tags": ["i18n", "messages", "pluralization"],
+  "inputs": [
+    { "name": "messages", "type": "markdown", "required": true }
+  ],
+  "context": "avoid string concatenation; use placeholders and contexts.",
+  "instructions": "1) refactor to use message keys with variables. 2) handle plural/gender rules. 3) add developer comments for translators. 4) output resource entries.",
+  "model_tips": "prefer icu message format.",
+  "risks": "ambiguous strings; locale edge cases.",
+  "references": [],
+  "output_format": { "type": "json" }
+}
+

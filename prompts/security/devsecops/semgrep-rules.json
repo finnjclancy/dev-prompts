@@ -1,0 +1,19 @@
+{
+  "title": "devsecops: semgrep rules authoring",
+  "description": "write or refine semgrep rules for your codebase patterns.",
+  "language": null,
+  "tech": "semgrep",
+  "category": "security",
+  "subcategory": "devsecops",
+  "tags": ["semgrep", "rules", "security"],
+  "inputs": [
+    { "name": "pattern_goal", "type": "markdown", "required": true }
+  ],
+  "context": "prefer precise patterns; add tests and autofix where safe.",
+  "instructions": "1) propose rule patterns and metavariables. 2) add tests (positive/negative). 3) include autofix if applicable. 4) output yaml for the rule and test cases.",
+  "model_tips": "minimize false positives; scope by languages/paths.",
+  "risks": "rule noise; performance issues.",
+  "references": [],
+  "output_format": { "type": "markdown" }
+}
+
